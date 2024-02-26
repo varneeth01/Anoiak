@@ -29,7 +29,7 @@ body {
   font-size: 1rem;
 }
 
-.navbar a:hover {
+.navbar .navrb:hover {
   color: red;
 }
 
