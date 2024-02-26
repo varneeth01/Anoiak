@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anoiak-Refund Policy</title>
+    <style>
+        *{
+            cursor: default;
+            margin: 0%;
+            padding: 0%;
+            /* box-sizing: border-box; */
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: black;
+        }
+        .navbar{
+            height: 100px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            position: relative;
+            color: white;
+            margin: 0px;
+        }
+        .content{
+            margin-left: 5%;
+            margin-right: 5%; 
+            padding: 20px;
+            background-color: #101010;
+            /* border: 1.5px solid red; */
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            box-shadow: 0px 0px 20px 1px #ffffff93; 
+            line-height: 1.5;
+            margin-bottom: 100px;
+        }
+        .content h1{
+            color: #ffffff; 
+            margin:20px 0px;
+        }
+        .content h2{
+            color: #ffffff; 
+            margin:20px 0 20px 0;
+        
+        }
+        .content p{
+            color: white;
+        }
+        .content a {
+            color: #00BFFF; 
+            text-decoration: none;
+        }
+        
+        .content a:hover {
+            text-decoration: underline;
+        }
+        .font-fade{
+            transform: translateY(20px);
+            opacity: 0;
+            transition: 1s ease;
+        }
+        .font-fade--visible{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="brand-name">Anoiak</h1>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+
+            <h1>Refund & Cancellation Policy</h1>
+            <p>Thank you for choosing to work with Anoiak.</p>
+
+            <p>If for any reason, You are not completely satisfied with a service We invite You to review our policy on
+                refunds. Please read and make sure you fully understand our refund policy prior to making a payment.
+                Anoiak operates as a business, and we expect CLIENTS to understand and respect our policies. Our goal as
+                a Design & Development Agency is to bring the highest value per Rupee/Dollar spent by our CLIENTS, and
+                in order to help us in that pursuit, we need to cover expenses and fuel our operations. Therefore, we
+                require payments to be made on-time in respect to the services offered to CLIENT.</p>
+
+            <p><strong>THIS IS OUR REFUND AND CANCELLATION POLICY, AND BY HIRING ANOIAK FOR SERVICES, YOU ARE BOUND BY
+                    THIS AGREEMENT AND YOU AGREE TO ABIDE BY OUR POLICIES.</strong></p>
+
+            <h2>Design & Web Development</h2>
+
+            <p>Design/Web design and development projects require extensive resources, consume our time, and incur
+                internal expenses. Therefore, once a payment or deposit is made, it is non-refundable. If a project gets
+                canceled, delayed, or postponed by the CLIENT, then all the amount paid will be retained by ANOIAK, and
+                if applicable, an additional cost will be charged to the CLIENT for all work completed beyond what was
+                already paid for. No exceptions.</p>
+            <p><em>Logo Design, Branding, Web Design, UI-UX Design, Search Engine Optimization, Social Media Marketing,
+                    & Internet Marketing</em></p>
+
+            <p>Payments for Design, Development, or any of our services are non-refundable even if a fee was paid in
+                advance. Once a payment or deposit is made, there are no exceptions to our refund policy.</p>
+
+            <h2>Setup Fees:</h2>
+
+            <p>Setup fees are applied directly to expenses incurred by ANOIAK in the setup phase of any Design,
+                Development, or Internet Marketing campaigns and are non-refundable. If any chargeback or payment
+                dispute is caused by CLIENT to a bank or credit card company, then CLIENT services and/or projects will
+                be suspended, and in some cases, all work will be undone (reversed) without notice. Furthermore, the
+                amount of the chargeback fee will be issued to the CLIENT. In Addition, any outstanding balances accrued
+                as a result of the chargeback(s) will have to be paid in full before we restore service, deliver any
+                files, or commence any work.</p>
+
+            <p class="font-fade"><strong>PLEASE CONTACT US TO ADDRESS ANY BILLING ISSUES, AND WE WILL GLADLY HELP YOU.</strong></p>
+
+            <p class="font-fade">Requesting a chargeback or opening a dispute for a valid charge from us is fraud. Chargebacks are never a
+                legal or appropriate means of obtaining a refund. All disputes will be challenged by our lawyers with
+                sufficient evidence from our records.</p>
+
+            <h2 class="font-fade">Website Hosting</h2>
+
+            <p class="font-fade">All hosting payments, whether present or past months, are non-refundable. Web hosting accounts are set up
+                from the date of your order and are allotted a limited amount of server resources depending on the plan
+                you purchased. If CLIENT opens a hosting account but does not use it, payment will still be due. Hosting
+                billing cycles continue until a cancellation notice is received in writing from the CLIENT in writing.
+            </p>
+
+            <h2 class="font-fade">Account Suspension</h2>
+
+            <p class="font-fade">All hosting payments that are 15 days past due will trigger an account suspension. Hosting paid up to 12
+                months in advance and canceled before the expiration date will be refunded for the months not yet
+                elapsed. ANOIAK reserves the right to disable and/or terminate a user’s account, services, or contract
+                if a user is found in violation of our terms and policies. Termination due to policy violations will not
+                be refunded.</p>
+
+            <p class="font-fade"><strong>Please also read our <a href="#">Terms of Use</a></strong></p>
+
+            <p class="font-fade"><em>Terms of Use | Anoiak</em></p>
+
+            <p class="font-fade"><strong>OVERVIEW ANOIAK DOES NOT PROVIDE SERVICES TO ANYONE OR COMPANY THAT PROMOTES PORNOGRAPHIC
+                    MATERIAL, NUDITY, GAMBLING, ILLEGAL CONTENT.</strong></p>
+        </div>
+    </main>
+    <script type="text/javascript" >
+        const lists = document.querySelectorAll(".font-fade");
+document.addEventListener("scroll", function () {
+  lists.forEach((list) => {
+    if (isInView(list)) {
+      list.classList.add("font-fade--visible");
+    }
+  });
+});
+
+function isInView(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.bottom > 0 &&
+    rect.top <
+      (window.innerHeight - 150 || document.documentElement.clientHeight - 150)
+  );
+}
+    </script>
+</body>
+
+</html>
