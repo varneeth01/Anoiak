@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anoiak-Designs</title>
+    <style>
+      * {
+        cursor: default;
+        margin: 0%;
+        padding: 0%;
+        /* box-sizing: border-box; */
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: rgb(0, 0, 0);
+      }
+      .navbar {
+        height: 100px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        color: rgb(255, 255, 255);
+        margin: 0px;
+      }
+      .content {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 20px;
+        background-color: #9f9f9f;
+        /* border: 1.5px solid red; */
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        box-shadow: 0px 0px 20px 1px #00000093;
+        line-height: 1.5;
+        margin-bottom: 100px;
+      }
+      .content h1 {
+        text-align: center;
+        font-size: 30px;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        color: #000000;
+      }
+      .content p {
+        text-align: center;
+      }
+      .font-fade {
+        transform: translateY(20px);
+        opacity: 0;
+        transition: 1s ease;
+      }
+      .font-fade--visible {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      button {
+        display: flex;
+        width: 200px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        align-items: center;
+        text-align: center;
+        margin: 50px 0 50px 40%;
+        font-family: inherit;
+        font-size: 10px;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        color: #7e97b8;
+        background-color: #e0e8ef;
+        border-style: solid;
+        border-width: 2px 2px 2px 2px;
+        border-color: rgba(13, 13, 13, 0.333);
+        border-radius: 40px 40px 40px 40px;
+        padding: 16px 24px 16px 28px;
+        transform: translate(0px, 0px) rotate(0deg);
+        transition: 0.2s;
+        box-shadow:
+          -4px -2px 16px 0px #ffffff,
+          4px 2px 16px 0px rgb(95 157 231 / 48%);
+      }
+
+      button:hover {
+        color: #516d91;
+        background-color: #e5edf5;
+        box-shadow:
+          -2px -1px 8px 0px #ffffff,
+          2px 1px 8px 0px rgb(95 157 231 / 48%);
+      }
+
+      button:active {
+        box-shadow: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <h1 class="brand-name">Anoiak</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <!-- <h1>Designs --Anoiak</h1> -->
+        <h1>Thank you for visiting Anoiak.</h1>
+
+        <p><strong>OUR TEAM IS WORKING ON DESIGNS FOR YOU !</strong></p>
+        <button onclick="location.href='/index.html'">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            stroke="currentColor"
+            stroke-width="2"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="css-i6dzq1"
+          >
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+          Explore Home
+        </button>
+        <p>
+          <strong>Please also read our <a href="#">Terms of Use</a></strong>
+        </p>
+
+        <p><em>Terms of Use | Anoiak</em></p>
+
+        <p>
+          <strong
+            >OVERVIEW ANOIAK DOES NOT PROVIDE SERVICES TO ANYONE OR COMPANY THAT
+            PROMOTES PORNOGRAPHIC MATERIAL, NUDITY, GAMBLING, ILLEGAL
+            CONTENT.</strong
+          >
+        </p>
+      </div>
+    </main>
+    <script type="text/javascript">
+      const lists = document.querySelectorAll(".font-fade");
+      document.addEventListener("scroll", function () {
+        lists.forEach((list) => {
+          if (isInView(list)) {
+            list.classList.add("font-fade--visible");
+          }
+        });
+      });
+
+      function isInView(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.bottom > 0 &&
+          rect.top <
+            (window.innerHeight - 150 ||
+              document.documentElement.clientHeight - 150)
+        );
+      }
+    </script>
+  </body>
+</html>
