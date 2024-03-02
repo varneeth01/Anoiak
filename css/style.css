@@ -4,9 +4,19 @@
   padding: 0%;
   /* box-sizing: border-box; */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
+@media (max-width:992px) {
+  *{
+    cursor: default;
+  }
+  body{
+    cursor: default;
+  }
+  main{
+    cursor: default;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -743,31 +753,33 @@ footer .team-love {
 
 
 @import url('https://fonts.googleapis.com/css?family=Anton');
-
-.cursor {
-  left: 0;
-  top: 0;
-  width: 10px;
-  height: 10px;
-  background-color: #ffffff;
-  position: fixed;
-  border-radius: 5px;
-  pointer-events: none;
-  z-index: 500 !important;
-}
-
-.cursor__follower {
-  transition: transform .2s;
-  width: 6px;
-  height: 6px;
-  pointer-events: none;
-}
-
-.cursor_follower2 {
-  transition: transform .2s;
-  width: 6px;
-  height: 6px;
-  pointer-events: none;
+@media (min-width:992px) {
+  .cursor {
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    position: fixed;
+    border-radius: 5px;
+    pointer-events: none;
+    z-index: 500 !important;
+  }
+  
+  .cursor__follower {
+    transition: transform .2s;
+    width: 6px;
+    height: 6px;
+    pointer-events: none;
+  }
+  
+  .cursor_follower2 {
+    transition: transform .2s;
+    width: 6px;
+    height: 6px;
+    pointer-events: none;
+  }
+  
 }
 
 
@@ -1152,6 +1164,7 @@ a {
 }
 
 .socialSvg path {
+
   fill: rgb(255, 255, 255);
 }
 
