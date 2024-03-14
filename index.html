@@ -16,6 +16,10 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 </head>
 
 <body>
@@ -24,10 +28,10 @@
       <div class="logo"><a href="#">Anoiak</a></div>
       <ul class="links">
         <li><a href="#" class='navrb'>Home</a></li>
-        <li><a href="quicklinks/design.html"  class='navrb'>Design</a></li>
-        <li><a href="#call-service"  class='navrb'>Services</a></li>
-        <li><a href="#work"  class='navrb'>Work</a></li>
-        <li><a href="#call-about"  class='navrb'>About</a></li>
+        <li><a href="quicklinks/design.html" class='navrb'>Design</a></li>
+        <li><a href="#call-service" class='navrb'>Services</a></li>
+        <li><a href="#work" class='navrb'>Work</a></li>
+        <li><a href="#call-about" class='navrb'>About</a></li>
       </ul>
       <a href="#call-contact" class="action_btn">Get Started</a>
       <div class="toggle_btn">
@@ -35,12 +39,12 @@
       </div>
     </div>
     <div class="dropdown_menu open">
-      <li><a href="#"  class='navrb'>Home</a></li>
-        <li><a href="quicklinks/design.html"  class='navrb'>Designs</a></li>
-        <li><a href="#call-service"  class='navrb'>Services</a></li>
-        <li><a href="#work"  class='navrb'>Work</a></li>
-        <li><a href="#call-about"  class='navrb'>About</a></li>
-        <li><a href="#call-contact" class="action_btn">Get Started</a></li>
+      <li><a href="#" class='navrb'>Home</a></li>
+      <li><a href="quicklinks/design.html" class='navrb'>Designs</a></li>
+      <li><a href="#call-service" class='navrb'>Services</a></li>
+      <li><a href="#work" class='navrb'>Work</a></li>
+      <li><a href="#call-about" class='navrb'>About</a></li>
+      <li><a href="#call-contact" class="action_btn">Get Started</a></li>
     </div>
   </header>
   <main>
@@ -94,6 +98,9 @@
       <!-- </div> -->
       <button class="btn" onclick="location.href='#call-service'"> <i class="fa-solid fa-angles-down"></i>
       </button>
+    </div>
+    <div id="progress">
+      <i class="fa-solid fa-angle-up" style="color: #000000;" id="progress-value"></i>
     </div>
     <section>
       <div class="outerframe" id="call-service">
@@ -246,42 +253,48 @@
         a
       </div>
 
-      <div class="work_process">
-        <div class="wp-head"><h2><i class="fa-solid fa-truck-fast"></i>Work Process</h2></div>
+      <div class="work_process font-fade">
+        <div class="wp-head">
+          <h2><i class="fa-solid fa-truck-fast"></i>Work Process</h2>
+        </div>
 
-        <div class="work_steps">
+        <div class="work_steps ">
           <div class="process-section" id="process">
-            <div class="pbox1 pbox">
-              <div class="pbox-content">
+            <div class="pbox1 pbox hidden">
+              <div class="pbox-content font-fade leftslide">
                 <i class="fa-solid fa-clipboard-check"></i>
                 <h2>Select a project</h2>
-                <p>Choose projects based on strategic alignment, feasibility, and potential for continual scaling, emphasizing cost-effective innovation for Webteck.</p>
+                <p>Choose projects based on strategic alignment, feasibility, and potential for continual scaling,
+                  emphasizing cost-effective innovation for Webteck.</p>
               </div>
-    
+
             </div>
-    
-            <div class="pbox2 pbox">
-              <div class="pbox-content">
+
+            <div class="pbox2 pbox hidden leftslide">
+              <div class="pbox-content font-fade">
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <h2>Project Analysis</h2>
-                <p>Assessing the requirements and scope for Webteck, emphasizing continual scaling and cost-effective innovation.</p>
-    
-              </div>
-            </div>
-    
-            <div class="pbox3 pbox">
-              <div class="pbox-content">
-                <i class="fa-solid fa-laptop-code"></i>
-                <h2>Plan Execute</h2>
-                <p>Strategizing and implementing plans for Webteck, ensuring a focus on empowered metrics and cost-effectiveness throughout execution.</p>
+                <p>Assessing the requirements and scope for Webteck, emphasizing continual scaling and cost-effective
+                  innovation.</p>
+
               </div>
             </div>
 
-            <div class="pbox4 pbox">
-              <div class="pbox-content">
+            <div class="pbox3 pbox hidden leftslide">
+              <div class="pbox-content font-fade">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Plan Execute</h2>
+                <p>Strategizing and implementing plans for Webteck, ensuring a focus on empowered metrics and
+                  cost-effectiveness throughout execution.</p>
+              </div>
+            </div>
+
+            <div class="pbox4 pbox hidden leftslide">
+              <div class="pbox-content font-fade">
                 <i class="fa-solid fa-truck-ramp-box "></i>
                 <h2>Deliver result</h2>
-                <p> Completing the Webteck project with a focus on continual scaling, empowered metrics, and delivering cost-effective and innovative outcomes.</p>
+                <p> Completing the Webteck project with a focus on continual scaling, empowered metrics, and delivering
+                  cost-effective and innovative outcomes.</p>
               </div>
             </div>
           </div>
@@ -326,12 +339,12 @@
 
           <!-- //Anoiak-new -->
           <div class="anoiak-new">
-            
+
           </div>
           <div class="new-anoiak">
           </div>
-          
-    
+
+
 
           <div class="ani2 abox">
             <div class="abox-content">
@@ -362,14 +375,14 @@
                 <h3>Send us a message</h3>
                 <form action="https://formsubmit.co/vellurelohith4@gmail.com" method="post">
                   <div class="form-group">
-                    <input class = "name" type="text" name="name" placeholder="Your Name" required>
+                    <input class="name" type="text" name="name" placeholder="Your Name" required>
                   </div>
                   <div class="form-group">
                     <input class="email" type="email" name="email" placeholder="Your Email" required>
                   </div>
                   <div class="form-group">
-                    <input class="message"type="message" name="message" placeholder="Tell us a bit more about your project"
-                      style="height: 50px;">
+                    <input class="message" type="message" name="message"
+                      placeholder="Tell us a bit more about your project" style="height: 50px;">
                   </div>
                   <button type="submit" class="c-button c-button--gooey"> Let's Discuss
                     <div class="c-button__blobs">
@@ -448,26 +461,22 @@
   </main>
   <hr>
   <script type="text/javascript" src="script.js"></script>
-  <script>
+  <!-- <script>
     var copy = document.querySelector(".logos-slide").cloneNode(true);
     document.querySelector(".logos").appendChild(copy);
   </script>
   <script src="https://kit.fontawesome.com/fa1d0bfdce.js" crossorigin="anonymous"></script>
   <script>
-window.embeddedChatbotConfig = {
-chatbotId: "cu8CX2X4w95izjVtLqAtJ",
-domain: "www.chatbase.co"
-}
-</script>
-<script
-src="https://www.chatbase.co/embed.min.js"
-chatbotId="cu8CX2X4w95izjVtLqAtJ"
-domain="www.chatbase.co"
-defer>
-</script>
+    window.embeddedChatbotConfig = {
+      chatbotId: "cu8CX2X4w95izjVtLqAtJ",
+      domain: "www.chatbase.co"
+    }
+  </script>
+  <script src="https://www.chatbase.co/embed.min.js" chatbotId="cu8CX2X4w95izjVtLqAtJ" domain="www.chatbase.co" defer>
+  </script> -->
 </body>
 <footer>
-  <!-- <div class="foot"> -->
+  <!-- <div class="foot">
   <div class="foot-head fh">
     <h4>ABOUT US</h4>
     <p>Web-Makers is a pioneer in offering end-to-end web design solutions for organisations all over the world with
@@ -476,6 +485,7 @@ defer>
   </div>
   <div class="foot-head2 fh">
     <h4>Quick Links</h4>
+    
     <ul>
       <li><a href="quicklinks/privacypolicy.html">Privacy policy</a></li>
       <li><a href="#">Terms of use</a></li>
@@ -504,7 +514,33 @@ defer>
         arrow_upward
       </span>
     </div>
-  </button>
+  </button> -->
+
+  <div class="row">
+    <div class="col">
+      <h3>ANOIAK</h3>
+      <P>Web-Makers is a pioneer is offering end-to-end web design solutions for organisations all over the world with
+        the most talented engineers.</P>
+    </div>
+    <div class="col">
+      <h3>Quick Links</h3>
+      <p><a href="quicklinks/privacypolicy.html">Privacy policy</a></p>
+      <p><a href="#">Terms of use </a></p>
+      <p><a href="#">Site Map</a></p>
+      <p><a href="quicklinks/RefundPolicy.html">Refund Policy</a></p>
+    </div>
+    <div class="col">
+      <h3>Connect</h3>
+      <p class="email-id"><a href="mailto:varneeth@anoiak.com"><i style="font-size:15px" class="fa">&#xf0e0;</i> varneeth@anoiak.com</a></p>
+      <p><a href="tel:+91 831-761-5026"><i style="font-size:15px" class="fa">&#xf095; </i> +91 8317615026</a></p>
+    </div>
+    <div class="col">
+      <p>©Anoiak. All rights reserved 2024</p>
+      <hr>
+      <p>Designed with <span class="heart">&#10084;</span> -- by Team Anoiak</p>
+    </div>
+  </div>
+
 </footer>
 
 </html>
